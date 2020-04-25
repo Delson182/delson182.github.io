@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 2 - LPII</title>
+    <script>
+        function corrigir(ex) {
+            var resp1, resp2, resp3, resp4, mensagem
+            var acertou = "Todas as respostas estão corretas!";
+            var parcial = "Algumas repostas estão incorretas!";
+            var errou = "Todas as repostas estão incorretas!";
+
+            if (ex == 1) {
+                resp1 = document.getElementById("e1").value;
+                resp2 = document.getElementById("e2").value;
+                mensagem = document.getElementById("resposta1");
+                if (resp1 == "carName" && resp2 == "Volvo") {
+                    mensagem.innerText = acertou;
+                    mensagem.style.color = "green";
+                } else if (resp1 == "carName" || resp2 == "Volvo") {
+                    mensagem.innerText = parcial;
+                    mensagem.style.color = "orange";
+                } else {
+                    mensagem.innerText = errou;
+                    mensagem.style.color = "red";
+                }
+            } else if (ex == 2) {
+                resp1 = document.getElementById("e3").value;
+                resp2 = document.getElementById("e4").value;
+                mensagem = document.getElementById("resposta2");
+                if (resp1 == "x" && resp2 == 50) {
+                    mensagem.innerText = acertou;
+                    mensagem.style.color = "green";
+                } else if (resp1 == "x" || resp2 == "50") {
+                    mensagem.innerText = parcial;
+                    mensagem.style.color = "orange";
+                } else {
+                    mensagem.innerText = errou;
+                    mensagem.style.color = "red";
+                }
+            }else if (ex == 3) {
+                resp1 = document.getElementById("e5").value;
+                resp2 = document.getElementById("e6").value;
+                resp3 = document.getElementById("e7").value;
+                mensagem = document.getElementById("resposta3");
+                if (resp1 == "x" && resp2 == 5  && resp3 == "+") {
+                    mensagem.innerText = acertou;
+                    mensagem.style.color = "green";
+                } else if (resp1 == "x" || resp2 == 5  || resp3 == "+") {
+                    mensagem.innerText = parcial;
+                    mensagem.style.color = "orange";
+                } else {
+                    mensagem.innerText = errou;
+                    mensagem.style.color = "red";
+                }
+            }else if (ex == 4) {
+                resp1 = document.getElementById("e8").value;
+                resp2 = document.getElementById("e9").value;
+                resp3 = document.getElementById("e10").value;
+                mensagem = document.getElementById("resposta4");
+                if (resp1 == "var" && resp2 == "z"  && resp3 == "alert") {
+                    mensagem.innerText = acertou;
+                    mensagem.style.color = "green";
+                } else if (resp1 == "var" || resp2 == "z"  || resp3 == "alert") {
+                    mensagem.innerText = parcial;
+                    mensagem.style.color = "orange";
+                } else {
+                    mensagem.innerText = errou;
+                    mensagem.style.color = "red";
+                }
+            }else{
+                resp1 = document.getElementById("e11").value;
+                resp2 = document.getElementById("e12").value;
+                resp3 = document.getElementById("e13").value;
+                resp4 = document.getElementById("e14").value;
+                resp5 = document.getElementById("e15").value;
+                mensagem = document.getElementById("resposta5");
+                if (resp1 == "firstName" && resp2 == ","  && resp3 == "Doe,"  && resp4 == "age" && resp5 == 35) {
+                    mensagem.innerText = acertou;
+                    mensagem.style.color = "green";
+                } else if (resp1 == "firstName" || resp2 == ","  || resp3 == "Doe," || resp4 == "age" || resp5 == 35) {
+                    mensagem.innerText = parcial;
+                    mensagem.style.color = "orange";
+                } else {
+                    mensagem.innerText = errou;
+                    mensagem.style.color = "red";
+                }
+            }
+        }
+        function mostrar(ex) {
+
+          
+                var txt;
+               
+             
+            
+            var campo1, campo2, campo3, campo4;
+            if (ex == 1) {
+
+                var person = prompt("Achou que eu ia deixar facinho? kkk Primeiro responda: Quatos é 2+2+2*2+4*2", "eita");
+                if (person == null || person == "" || person !=16) {
+                    window.confirm("ERRRRRRRRRRROUUUU!!! kkkk");
+                } else {
+                    window.confirm("Acertou.. Mas Deus ta vendo você copiando as respostas sem tentar responder...");
+                    resp1 = document.getElementById("e1").value = "carName";
+                    resp2 = document.getElementById("e2").value = "Volvo";
+                }
+                
+            }
+            if (ex == 2) {
+
+                var person = prompt("Achou que eu ia deixar facinho? kkk Primeiro responda: Quantos é 4*4+30/10+10", "eita");
+                if (person == null || person == "" || person !=29) {
+                    window.confirm("ERRRRRRRRRRROUUUU!!! kkkk");
+                } else {
+                    window.confirm("Acertou.. Mas Deus ta vendo você copiando as respostas sem tentar responder...");
+                    resp1 = document.getElementById("e3").value = "x";
+                    resp2 = document.getElementById("e4").value = 50;
+                }
+               
+            }
+            if (ex == 3) {
+
+                var person = prompt("Achou que eu ia deixar facinho? kkk Primeiro responda: Quantos é 5*10+8+10/2*9", "eita");
+                if (person == null || person == "" || person !=103) {
+                    window.confirm("ERRRRRRRRRRROUUUU!!! kkkk");
+                } else {
+                    window.confirm("Acertou.. Mas Deus ta vendo você copiando as respostas sem tentar responder...");
+                    resp1 = document.getElementById("e5").value = "x";
+                    resp2 = document.getElementById("e6").value = 5;
+                    resp3 = document.getElementById("e7").value = "+";
+                }
+               
+            }
+            if (ex == 4) {
+                var person = prompt("Achou que eu ia deixar facinho? kkk Primeiro responda: Quantos é 9+9+10*30+100/2", "eita");
+                if (person == null || person == "" || person !=368) {
+                    window.confirm("ERRRRRRRRRRROUUUU!!! kkkk");
+                } else {
+                    window.confirm("Acertou.. Mas Deus ta vendo você copiando as respostas sem tentar responder...");
+                    resp1 = document.getElementById("e8").value = "var";
+                    resp2 = document.getElementById("e9").value = "z";
+                    resp3 = document.getElementById("e10").value = "alert";
+                }
+               
+               
+            }
+            if (ex == 5) {
+                var person = prompt("Achou que eu ia deixar facinho? kkk Primeiro responda: Quantos é 15*25+13+137+14-30/3", "eita");
+                if (person == null || person == "" || person !=529) {
+                    window.confirm("ERRRRRRRRRRROUUUU!!! kkkk");
+                } else {
+                    window.confirm("Acertou.. Mas Deus ta vendo você copiando as respostas sem tentar responder...");
+                    resp1 = document.getElementById("e11").value = "lastName";
+                    resp2 = document.getElementById("e12").value = ",";
+                    resp3 = document.getElementById("e13").value = "Doe,";
+                    resp4 = document.getElementById("e14").value ="age";
+                    resp5 = document.getElementById("e15").value = 35;
+                }
+               
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0px
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background: #6C7A89;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center
+        }
+        .box {
+            width: 80%;
+            height: 80%;
+            background: #fff;
+        }
+        p,h2 {text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Correção Trabalho</h2>
+            <p> ESCOLA ESTADUAL CARLOS DRUMMOND DE ANDRADE<br>
+                <b>Disciplina:</b> Lógica e Linguagem de Programação II  <br>
+                <b>Professor:</b> Adelson F. Dos Santos<br>
+                <b>Curso:</b> Técnico em Informática 	<b>Mód:</b> IV  <b>Turno:</b> Noturno
+
+
+                </p>
+            1) Exercício <br>
+            var <input type="text" id="e1" size="6"> = "<input type="text" id="e2" size="8">";
+            <input type="button" value="Corrigir" onclick="corrigir(1)"> <input type="button" value="Mostrar resposta Certa"
+                onclick="mostrar(1)">
+            <br> <label id="resposta1"></label><br><br>
+
+            2) Exercício <br>
+            var <input type="text" id="e3"size="4"> = <input type="text" id="e4"size="4">;
+            <input type="button" value="Corrigir" onclick="corrigir(2)"> <input type="button" value="Mostrar resposta Certa"
+                onclick="mostrar(2)">
+            <br> <label id="resposta2"></label><br><br>
+
+            3) Exercício <br>
+            var <input type="text" id="e5" size="4"> = <input type="text" id="e6" size="4">;<br>
+            var y = 10;<br>
+            document.getElementById("demo").innerHTML = x <input type="text" id="e7" size="1">  y;
+            <br>
+            <input type="button" value="Corrigir" onclick="corrigir(3)"> <input type="button" value="Mostrar resposta Certa"
+                onclick="mostrar(3)">
+            <br> <label id="resposta3"></label><br><br>
+
+            4) Exercício <br>
+            var x = 5;<br>
+            var y = 10;<br>
+            <input type="text" id="e8" size="1">  <input type="text" id="e9" size="1"> = x+y;<br>
+            <input type="text" id="e10" size="5"> (z);
+            <br>
+            <input type="button" value="Corrigir" onclick="corrigir(4)"> <input type="button" value="Mostrar resposta Certa"
+                onclick="mostrar(4)">
+            <br> <label id="resposta4"></label><br><br>
+
+            5) Exercício <br>
+        var <input type="text" id="e11" size="6">= "John"  <input type="text" id="e12" size="1"> lastName =<input type="text" id="e13" size="4"> <input type="text" id="e14" size="1"> = <input type="text" id="e15" size="3">; <br>
+            <br>
+            <input type="button" value="Corrigir" onclick="corrigir(5)"> <input type="button" value="Mostrar resposta Certa"
+                onclick="mostrar(5)">
+            <br> <label id="resposta5"></label><br><br>
+        </div>
+    </div>
+    <footer>
+        <p style="background-color: rgb(169, 169, 177);"><b>2020. Desenvolvido Por Adelson F. Dos Santos</b></p>
+    </footer>
+
+</html>
